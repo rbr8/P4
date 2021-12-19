@@ -1,0 +1,35 @@
+/* the styles for the header */
+header {
+	padding: 1em 0 1em 0;
+    margin-bottom: 1em;
+    background-color: maroon;
+
+}
+
+/* the styles for the navigation menu */
+.navbar {
+    background-color: brown;
+    padding: 0.5em;
+}
+
+.navbar a.current {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    font-weight: bold;
+    width: 125px;
+    text-align: center;
+    font-size: 125%;
+}
+
+.dropdown-menu {
+    min-width: 13.5rem;
+    background-color: #ffffded;
+    border: 2px solid maroon;
+}

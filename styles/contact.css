@@ -1,0 +1,23 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #fffded;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+
+/*css for contact page content*/
+.form-group input{
+    margin-bottom: 10px;
+}
+
+button {
+   margin-top: 10px; 
+}

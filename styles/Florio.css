@@ -1,0 +1,243 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #fffded;
+    min-width: 1000px;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+.col-12 {
+    padding: 1em;
+}
+
+.completion-sublist {
+    list-style-type: none;
+}
+
+.completion-sublist ul li {
+    list-style-type: square;
+}
+
+/* CSS for page content */
+h1 {
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 20px;
+    min-width: 400px;
+}
+
+h2 {
+    display: block;
+    margin: auto;
+    padding-bottom: 0.5em;
+    min-width: 300px;
+}
+
+article {
+    display: block;
+    border: 2px solid black;
+    padding: 10px 10px 0 10px;
+    max-width: 500px;
+    color: black;
+    background-color: white;
+    min-width: 250px;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: black;
+}
+
+.contents {
+    display: block;
+}
+
+article ul li {
+    border-bottom: 1px solid black;
+}
+
+/* CSS for Sections */
+
+section {
+    display: block;
+    margin: auto;
+    background-color: royalblue;
+    padding: 1em;
+    min-width: 1300px;
+}
+
+section p {
+    font-size: 0.99em;
+}
+/* CSS for Pokemon */
+section .pokemon {;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: royalblue;
+    color: white;
+    border: 1px solid mediumblue;
+    border-radius: 0.25em;
+    margin-bottom: 2em;
+}
+
+section .bottom {
+    margin-bottom: 0em;
+}
+
+section .pokemon .card-title {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid mediumblue;
+    margin-bottom: 0px;
+}
+
+section .pokemon .request {
+    margin: auto;
+    background-color: mediumblue;
+    border-color: mediumblue;
+    border-radius: 0;
+    min-width: inherit;
+    max-width: inherit;
+}
+
+.pokemon .card-subtitle {
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid mediumblue;
+}
+
+.pokemon .card-text {
+    padding: 0.45em;
+}
+
+.pokemon .prompt {
+    background-color: royalblue;
+    min-width: 25%;
+    border-top-color: mediumblue;
+    border-right-color: mediumblue;
+    border-bottom-color: mediumblue;
+    border-radius: 0;
+    border-bottom-left-radius: 0.25em;
+}
+
+.pokemon .info {
+    background-color: royalblue;
+    min-width: 15%;
+    text-align: center;
+    border-color: mediumblue;
+    border-radius: 0;
+}
+
+.pokemon .how-to-complete {
+    background-color: royalblue;
+    border-color: mediumblue;
+    border-radius: 0;
+}
+
+.pokemon .completed {
+    background-color: royalblue;
+    border-top-color: mediumblue;
+    border-left-color: mediumblue;
+    border-bottom-color: mediumblue;
+    border-radius: 0;
+    border-bottom-right-radius: 0.25em;
+}
+
+.prompt .prompt-img {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    min-width: 100px;
+    max-width: 80%;
+    border: 2px solid mediumblue;
+}
+
+.prompt .prompt-text {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.info .level {
+    text-align: center;
+    padding: 0.5em 0;
+    margin-bottom: 0.25em;
+}
+
+.info .target {
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.info .icon {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100px;
+    border: 1px solid mediumblue;
+    background-color: dodgerblue;
+}
+
+.info .targetnum {
+    padding-top: 0.2em;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.info .targetmon {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.how-to-complete ul {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;    
+}
+
+.how-to-complete ul li {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.how-to-complete ul li a {
+    color: white;
+}
+
+.completed .complete-img {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    max-width: 100%;
+    border: 2px solid mediumblue;
+}
+
+.completed .completion-text {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.florio {
+    display: block;
+    border: 1px solid maroon;
+    background-color: mediumblue;
+}

@@ -1,0 +1,105 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #fffded;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* CSS for page content */
+h1 {
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 20px;
+    min-width: 400px;
+}
+
+article {
+    margin: auto;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 10px 0 0;
+    max-width: 500px;
+}
+
+article p {
+    padding-right: 10px;
+    line-height: 125%
+    max-width: 50%;
+}
+
+article img {
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    min-width: 200px;
+    max-width: 50%;
+}
+
+.col-12 {
+    padding: 1em;
+}
+
+/* CSS for Buttons */
+section {
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+section a {
+    color: white;
+    text-decoration:none;
+}
+
+section a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+section .col-3 {
+    min-width: 150px;
+    max-width: 250px;
+}
+
+#Florio {
+    background-color: royalblue;
+    border: 2px solid mediumblue;
+    box-shadow: 2px 2px 2px mediumblue;
+}
+
+#Belusylva {
+    background-color: darkorange;
+    border: 2px solid orangered;
+    box-shadow: 2px 2px 2px orangered;
+}
+
+#Maricopia {
+    background-color: hotpink;
+    border: 2px solid mediumvioletred;
+    box-shadow: 2px 2px 2px mediumvioletred;
+}
+
+#Voluca {
+    background-color: limegreen;
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px green;    
+}
+
+#Durice {
+    background-color: fuchsia;
+    border: 2px solid darkviolet;
+    box-shadow: 2px 2px 2px darkviolet;
+}
+
+#Aurus {
+    background-color: gold;
+    border: 2px solid goldenrod;
+    box-shadow: 2px 2px 2px goldenrod;
