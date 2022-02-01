@@ -1,0 +1,316 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #fffded;
+    min-width: 775px;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+.col-12 {
+    padding: 1em;
+}
+
+.completion-sublist ul {
+    list-style-type: circle;
+}
+
+.completion-sublist ul li {
+    list-style-type: square;
+}
+
+/* CSS for page content */
+h1 {
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 20px;
+    min-width: 400px;
+}
+
+h2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0.5em;
+    text-decoration: underline;
+}
+
+.contents {
+    margin: auto;
+    display: block;
+    border: 2px solid maroon;
+    padding: 10px 20px 0px 10px;
+    max-width: 500px;
+    color: black;
+    background-color: lawngreen;
+    min-width: 250px;
+}
+
+.contents a {
+    color: black;
+    text-decoration: none;
+}
+
+.contents a:hover {
+    color: black;
+}
+
+.contents ul li {
+    border-bottom: 1px solid black;
+}
+
+article {
+    margin: auto;
+    border-bottom: 4px solid black;
+}
+
+article .contents {
+    margin-bottom: 2em;
+}
+/* CSS for Sections */
+
+section {
+    display: block;
+    margin: auto;
+    background-color: forestgreen;
+    padding: 1em;
+    min-width: 1300px;
+}
+
+section p {
+    font-size: 0.99em;
+}
+/* CSS for Pokemon */
+section .pokemon {;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: forestgreen;
+    color: white;
+    border: 2px solid darkgreen;
+    border-radius: 0.25em;
+    margin-bottom: 2em;
+}
+
+section .bottom {
+    margin-bottom: 0em;
+}
+
+section .pokemon .card-title {
+    margin: auto;
+    padding-top: 0.35em;
+    margin-bottom: 0px;
+}
+
+section .pokemon .card-title h5 {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+section .pokemon .request {
+    margin: auto;
+    background-color: darkgreen;
+    border-color: darkgreen;
+    border-radius: 0;
+    min-width: inherit;
+    max-width: inherit;
+}
+
+.pokemon .card-subtitle {
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid darkgreen;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.pokemon .card-text {
+    padding: 0.45em;
+}
+
+.pokemon .prompt {
+    background-color: forestgreen;
+    border-top: 2px solid darkgreen;
+    border-right-color: darkgreen;
+    border-bottom-color: darkgreen;
+    border-radius: 0;
+    width: 35%
+}
+
+.pokemon .info {
+    background-color: forestgreen;
+    text-align: center;
+    border-top: 2px solid darkgreen;
+    border-right-color: darkgreen;
+    border-left-color: darkgreen;
+    border-bottom-color: darkgreen;
+    border-radius: 0;
+    width: 30%
+}
+
+.pokemon .completed {
+    background-color: forestgreen;
+    border-top: 2px solid darkgreen;
+    border-left-color: darkgreen;
+    border-bottom-color: darkgreen;
+    border-radius: 0;
+    width: 35%;
+}
+
+.pokemon .how-to-complete {
+    background-color: forestgreen;
+    border-top-color: darkgreen;
+    border-bottom-color: darkgreen;
+    border-radius: 0;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    padding: 0 3em 0.5em 3em;
+    min-width: 100%;
+}
+
+.prompt .prompt-img {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    min-width: 100px;
+    max-width: 80%;
+    border: 2px solid darkgreen;
+}
+
+.prompt .prompt-text {
+    margin: auto;
+    margin-top: 0em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 1em;
+}
+
+.info .level {
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 0.35em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    line-height: 20px
+}
+
+.info .target {
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.info .icon {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.15em;
+    max-width: 125px;
+    min-width: 100px;
+    border: 1px solid darkgreen;
+    border-radius: 0.5em;
+    background-color: limegreen;
+}
+
+.info .targetnum {
+    padding-top: 0.2em;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.info .targetmon {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.completed .complete-img {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    max-width:  width: 100%;
+    border: 2px solid darkgreen;
+}
+
+.completed .completion-text {
+    margin: auto;
+    margin-top: 0em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.how-to-complete ol {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px; 
+    padding-top: 0px;
+}
+
+.how-to-complete ol li {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.how-to-complete ol p {
+    margin-bottom: 0.5em;
+    font-weight: 475;
+    margin-left: 0.25em;
+}
+
+.how-to-complete ul {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px; 
+    padding-top: 0px;
+    list-style-type: disc;
+}
+    
+.how-to-complete ul li {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.how-to-complete ul p {
+    margin-bottom: 0.5em;
+    font-weight: 475;
+    margin-left: 0.25em;
+}
+
+.how-to-complete ol li a {
+    color: white;
+}
+
+.completion-sublist {
+    list-style-type: upper-roman;
+}
+
+.voluca {
+    display: block;
+    border: 1px solid maroon;
+    background-color: darkgreen;
+}

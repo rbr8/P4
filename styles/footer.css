@@ -16,13 +16,18 @@ footer p {
 	padding: 0;   
 }
 
-/* CSS for Return to Top toggle because this is where I felt like putting it */
+/* CSS for Return toggles because this is where I felt like putting it */
+
+.page-bottom {
+    margin: auto;
+}
 
 .warp {
     margin: auto;
     text-align: center;
     color: black;
     font-weight: bold;
+    padding: 0.5rem;
 }
 
 .warp a {

@@ -6,7 +6,7 @@
 
 html {
 	color: #fffded;
-    min-width: 1000px;
+    min-width: 775px;
 }
 
 a:focus, a:hover {
@@ -17,8 +17,8 @@ a:focus, a:hover {
     padding: 1em;
 }
 
-.completion-sublist {
-    list-style-type: none;
+.completion-sublist ul {
+    list-style-type: circle;
 }
 
 .completion-sublist ul li {
@@ -37,37 +37,43 @@ h1 {
 h2 {
     display: block;
     margin: auto;
+    text-align: center;
     padding-bottom: 0.5em;
-    min-width: 300px;
+    text-decoration: underline;
 }
 
-article {
+.contents {
+    margin: auto;
     display: block;
-    border: 2px solid black;
-    padding: 10px 10px 0 10px;
+    border: 2px solid maroon;
+    padding: 10px 20px 0px 10px;
     max-width: 500px;
     color: black;
-    background-color: white;
+    background-color: lightskyblue;
     min-width: 250px;
 }
 
-article a {
+.contents a {
     color: black;
     text-decoration: none;
 }
 
-article a:hover {
+.contents a:hover {
     color: black;
 }
 
-.contents {
-    display: block;
-}
-
-article ul li {
+.contents ul li {
     border-bottom: 1px solid black;
 }
 
+article {
+    margin: auto;
+    border-bottom: 4px solid black;
+}
+
+article .contents {
+    margin-bottom: 2em;
+}
 /* CSS for Sections */
 
 section {
@@ -87,7 +93,7 @@ section .pokemon {;
     padding-bottom: 0px;
     background-color: royalblue;
     color: white;
-    border: 1px solid mediumblue;
+    border: 2px solid blue;
     border-radius: 0.25em;
     margin-bottom: 2em;
 }
@@ -97,17 +103,20 @@ section .bottom {
 }
 
 section .pokemon .card-title {
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    border-bottom: 1px solid mediumblue;
+    margin: auto;
+    padding-top: 0.35em;
     margin-bottom: 0px;
+}
+
+section .pokemon .card-title h5 {
+    font-weight: bolder;
+    font-size: 25px;
 }
 
 section .pokemon .request {
     margin: auto;
-    background-color: mediumblue;
-    border-color: mediumblue;
+    background-color: blue;
+    border-color: blue;
     border-radius: 0;
     min-width: inherit;
     max-width: inherit;
@@ -118,7 +127,10 @@ section .pokemon .request {
     padding-bottom: 5px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    border-bottom: 2px solid mediumblue;
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+    font-size: 20px;
+    
 }
 
 .pokemon .card-text {
@@ -127,55 +139,72 @@ section .pokemon .request {
 
 .pokemon .prompt {
     background-color: royalblue;
-    min-width: 25%;
-    border-top-color: mediumblue;
-    border-right-color: mediumblue;
-    border-bottom-color: mediumblue;
+    border-top: 2px solid blue;
+    border-right-color: blue;
+    border-bottom-color: blue;
     border-radius: 0;
-    border-bottom-left-radius: 0.25em;
+    width: 35%
 }
 
 .pokemon .info {
     background-color: royalblue;
-    min-width: 15%;
     text-align: center;
-    border-color: mediumblue;
+    border-top: 2px solid blue;
+    border-right-color: blue;
+    border-left-color: blue;
+    border-bottom-color: blue;
     border-radius: 0;
-}
-
-.pokemon .how-to-complete {
-    background-color: royalblue;
-    border-color: mediumblue;
-    border-radius: 0;
+    width: 30%
 }
 
 .pokemon .completed {
     background-color: royalblue;
-    border-top-color: mediumblue;
-    border-left-color: mediumblue;
-    border-bottom-color: mediumblue;
+    border-top: 2px solid blue;
+    border-left-color: blue;
+    border-bottom-color: blue;
+    border-radius: 0;
+    width: 35%;
+}
+
+.pokemon .how-to-complete {
+    background-color: royalblue;
+    border-top-color: blue;
+    border-bottom-color: blue;
     border-radius: 0;
     border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    padding: 0 3em 0.5em 3em;
+    min-width: 100%;
 }
 
 .prompt .prompt-img {
     margin: auto;
     margin-top: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
     min-width: 100px;
     max-width: 80%;
-    border: 2px solid mediumblue;
+    border: 2px solid blue;
 }
 
 .prompt .prompt-text {
+    margin: auto;
+    margin-top: 0em;
     padding-top: 0;
+    padding-right: 0;
     padding-bottom: 1em;
 }
 
 .info .level {
     text-align: center;
-    padding: 0.5em 0;
-    margin-bottom: 0.25em;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 0.35em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    line-height: 20px
 }
 
 .info .target {
@@ -183,14 +212,18 @@ section .pokemon .request {
     padding-bottom: 5px;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    font-weight: bold;
 }
 
 .info .icon {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 100px;
-    border: 1px solid mediumblue;
+    padding: 0.15em;
+    max-width: 125px;
+    min-width: 100px;
+    border: 1px solid blue;
+    border-radius: 0.5em;
     background-color: dodgerblue;
 }
 
@@ -205,39 +238,75 @@ section .pokemon .request {
     padding-bottom: 1em;
 }
 
+.completed .complete-img {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    max-width:  width: 100%;
+    border: 2px solid blue;
+}
+
+.completed .completion-text {
+    margin: auto;
+    margin-top: 0em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.how-to-complete ol {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px; 
+    padding-top: 0px;
+}
+
+.how-to-complete ol li {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.how-to-complete ol p {
+    margin-bottom: 0.5em;
+    font-weight: 475;
+    margin-left: 0.25em;
+}
+
 .how-to-complete ul {
     margin: auto;
     margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;    
+    margin-right: 10px; 
+    padding-top: 0px;
+    list-style-type: disc;
 }
-
+    
 .how-to-complete ul li {
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
-.how-to-complete ul li a {
+.how-to-complete ul p {
+    margin-bottom: 0.5em;
+    font-weight: 475;
+    margin-left: 0.25em;
+}
+
+.how-to-complete ol li a {
     color: white;
-}
-
-.completed .complete-img {
-    margin: auto;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    max-width: 100%;
-    border: 2px solid mediumblue;
-}
-
-.completed .completion-text {
-    padding-top: 0;
-    padding-bottom: 1em;
 }
 
 .florio {
     display: block;
     border: 1px solid maroon;
-    background-color: mediumblue;
+    background-color: blue;
 }
